@@ -1,0 +1,28 @@
+{
+    "name": "anwar/laravel-owl",
+    "description": "Owl carousel for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "anwar",
+            "email": "ajr.jahid@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Anwar\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Anwar\\LaravelOwl\\OwlCarouselProvider "
+            ],
+            "aliases": {
+            }
+        }
+    }
+}
