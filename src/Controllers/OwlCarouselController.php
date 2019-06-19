@@ -1,13 +1,15 @@
 <?php
 
-namespace Anwar\LaravelOwl\Controllers;
+namespace Anwar\Laravelowl\Controllers;
 
+use Anwar\LaravelOwl\Models\OwlRegister;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class OwlCarouselController extends Controller
 {
     public function index(){
-        return "Controller";
+        $carouselList =  OwlRegister::with("CarouselImage")->get();
+        return view("LaravelOwl::index",compact("carouselList"));
     }
 }

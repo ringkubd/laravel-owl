@@ -1,5 +1,5 @@
 {
-    "name": "anwar/laravel-owl",
+    "name": "anwar/laravelowl",
     "description": "Owl carousel for laravel",
     "type": "library",
     "license": "MIT",
@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Anwar\\LaravelOwl\\OwlCarouselProvider "
+                "Anwar\\Laravelowl\\OwlCarouselProvider"
             ],
             "aliases": {
             }
