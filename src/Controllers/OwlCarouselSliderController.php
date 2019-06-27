@@ -7,20 +7,23 @@ use Anwar\LaravelOwl\Models\OwlRegister;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class OwlCarouselController extends Controller
+class OwlCarouselSliderController extends Controller
 {
-    public function index(){
-        $carouselList =  OwlRegister::with("CarouselImage")->get();
-        $carouselModel = new OwlRegister();
-        return view("LaravelOwl::index",compact("carouselList","carouselModel"));
+    public function create(){
+        $model = new OwlCarouselImage();
+        $carouselList = OwlRegister::pluck("carousel_name",'id');
+
+        return view("LaravelOwl::sliders.create",compact('model','carouselList'));
     }
+
+
 
     public function store(Request $req){
         $this->validate($req,[
-            "short_code" => "required|unique:owl_register,short_code",
-            "carousel_name" => "required"
+            "carousel_id" => "required",
+            "carousel_id" => "required"
         ]);
-        OwlRegister::create($req->all());
+        OwlCarouselImage::create($req->all());
         return back();
     }
 

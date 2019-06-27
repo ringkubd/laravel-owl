@@ -40,6 +40,10 @@ class OwlCarouselProvider extends ServiceProvider
             __DIR__ . '/Config/LaravelOwl.php' => config_path('LaravelOwl.php'),
         ]);
 
+        $this->publishes([
+            __DIR__ . '/assets/' => public_path('vendor/laravelowl'),
+        ],'LaravelOwl');
+
         if ($this->app->runningInConsole()) {
             $this->commands([
                 LaravelOwl::class

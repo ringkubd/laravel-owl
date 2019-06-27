@@ -10,7 +10,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "unisharp/laravel-filemanager":"~1.8",
+        "laravelcollective/html": "^5.8"
+    },
     "autoload": {
         "psr-4": {
             "Anwar\\": "src/"

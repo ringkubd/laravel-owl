@@ -16,7 +16,12 @@ class OwlCarouselImage extends Model
      * @var array
      */
     protected $fillable = [
-        'carousel_id','picture_uri','dimension'
+        'carousel_id','picture_uri','height','img_title','width'
     ];
+
+
+    public function carousel(){
+        return $this->belongsTo(OwlRegister::class);
+    }
 
 }
