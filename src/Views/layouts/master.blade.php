@@ -12,7 +12,7 @@
     @include('admin.inc.left-sidebar')
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div class="content-wrapper" id="app">
         <section class="content-header">
             <h1>
                 <button onclick="window.history.back()" class="btn btn-sm btn-linkedin" title="Go to previous page">
