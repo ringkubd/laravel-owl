@@ -11,8 +11,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "unisharp/laravel-filemanager":"~1.8",
-        "laravelcollective/html": "~5.8"
+        "unisharp/laravel-filemanager":">=1.8",
+        "laravelcollective/html": ">=5.8"
     },
     "autoload": {
         "psr-4": {
