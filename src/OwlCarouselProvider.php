@@ -1,6 +1,6 @@
 <?php
 
-namespace Anwar\Laravelowl;
+namespace Anwar\LaravelOwl;
 
 use Anwar\LaravelOwl\Commands\LaravelOwl;
 use Anwar\LaravelOwl\Models\OwlRegister;
