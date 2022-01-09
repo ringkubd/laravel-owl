@@ -43,7 +43,7 @@
             version: 1.0.0
         </div>
         <!-- Default to the left -->
-        <strong>Developed by <a href="http://shafiq.towhid.info/" target="_blank" title="www.shafiq.towhid.info">Shafiqul</a>.</strong> All rights reserved.
+        <strong>Developed by <a href="https:/anwarjahid.com/" target="_blank" title="www.anwarjahid.com/">Anwar</a>.</strong> All rights reserved.
     </footer>
 
 

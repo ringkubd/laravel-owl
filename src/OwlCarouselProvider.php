@@ -2,8 +2,6 @@
 
 namespace Anwar\LaravelOwl;
 
-use Anwar\LaravelOwl\Commands\LaravelOwl;
-use Anwar\LaravelOwl\Models\OwlRegister;
 use Illuminate\Support\ServiceProvider;
 
 class OwlCarouselProvider extends ServiceProvider
@@ -46,7 +44,7 @@ class OwlCarouselProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                LaravelOwl::class
+                \Anwar\LaravelOwl\Commands\LaravelOwlCommands::class
             ]);
         }
     }

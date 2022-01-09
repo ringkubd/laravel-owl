@@ -4,7 +4,7 @@ namespace Anwar\LaravelOwl\Commands;
 
 use Illuminate\Console\Command;
 
-class LaravelOwl extends Command
+class LaravelOwlCommands extends Command
 {
     /**
      * The name and signature of the console command.
