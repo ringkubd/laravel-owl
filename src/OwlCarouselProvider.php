@@ -44,7 +44,7 @@ class OwlCarouselProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \Anwar\LaravelOwl\Commands\LaravelOwlCommands::class
+                LaravelOwlCommands::class
             ]);
         }
     }

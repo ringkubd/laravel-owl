@@ -1,6 +1,6 @@
 <?php
 
-namespace Anwar\LaravelOwl\Commands;
+namespace Anwar\LaravelOwl;
 
 use Illuminate\Console\Command;
 
