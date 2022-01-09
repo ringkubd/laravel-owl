@@ -2,6 +2,7 @@
 
 namespace Anwar\LaravelOwl;
 
+
 use Illuminate\Console\Command;
 
 class LaravelOwlCommands extends Command
@@ -38,7 +39,7 @@ class LaravelOwlCommands extends Command
     public function handle()
     {
         $this->info("Start publishing.................");
-        $this->call('vendor:publish', ['--provider' => 'Anwar\Laravelowl\OwlCarouselProvider']);
+        $this->call('vendor:publish', ['--provider' => 'Anwar\LaravelOwl\OwlCarouselProvider']);
         $this->info("End publishing.");
 
         $this->info("Start database migration................");
