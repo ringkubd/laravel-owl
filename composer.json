@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Anwar\\Laravelowl\\OwlCarouselProvider"
+                "Anwar\\LaravelOwl\\OwlCarouselProvider"
             ],
             "aliases": {
             }
