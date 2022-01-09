@@ -7,15 +7,15 @@ Route::group(['middleware' => 'web'], function () {
      */
     Route::prefix("carousel")->group(function (){
 
-        Route::get("/", "Anwar\Laravelowl\Controllers\OwlCarouselController@index");
-        Route::get("/{id}/edit", "Anwar\Laravelowl\Controllers\OwlCarouselController@edit");
-        Route::post("/{id}/update", "Anwar\Laravelowl\Controllers\OwlCarouselController@update");
-        Route::delete("/{id}/delete", "Anwar\Laravelowl\Controllers\OwlCarouselController@delete");
-        Route::post("/", "Anwar\Laravelowl\Controllers\OwlCarouselController@store");
+        Route::get("/", "Anwar\LaravelOwl\Controllers\OwlCarouselController@index");
+        Route::get("/{id}/edit", "Anwar\LaravelOwl\Controllers\OwlCarouselController@edit");
+        Route::post("/{id}/update", "Anwar\LaravelOwl\Controllers\OwlCarouselController@update");
+        Route::delete("/{id}/delete", "Anwar\LaravelOwl\Controllers\OwlCarouselController@delete");
+        Route::post("/", "Anwar\LaravelOwl\Controllers\OwlCarouselController@store");
 
-        Route::get("/slider/{id}/show","Anwar\Laravelowl\Controllers\OwlCarouselController@sliderList");
-        Route::get("/slider/create","Anwar\Laravelowl\Controllers\OwlCarouselSliderController@create");
-        Route::post("/slider/create","Anwar\Laravelowl\Controllers\OwlCarouselSliderController@store");
+        Route::get("/slider/{id}/show","Anwar\LaravelOwl\Controllers\OwlCarouselController@sliderList");
+        Route::get("/slider/create","Anwar\LaravelOwl\Controllers\OwlCarouselSliderController@create");
+        Route::post("/slider/create","Anwar\LaravelOwl\Controllers\OwlCarouselSliderController@store");
     });
 
 });
