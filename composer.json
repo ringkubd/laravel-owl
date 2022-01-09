@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Anwar\\Laravelowl\\": "src/"
+            "Anwar\\LaravelOwl\\": "src/"
         }
     },
     "extra": {
